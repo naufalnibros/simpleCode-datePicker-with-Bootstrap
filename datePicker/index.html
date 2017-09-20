@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>DatePicker</title>
+    </head>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"/>
+    <style>
+        body{ padding:20px }
+    </style>
+    <body><script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <form action="">
+            <div class="form-group">
+                <label for="tanggal">Tanggal</label>
+                <input type="text" name="tanggal" class="tanggal"/>
+            </div>
+        </form>
+
+        <script src="jquery/dist/jquery.min.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.tanggal').datepicker({
+                    format: "yyyy-mm-dd",
+                    autoclose: true
+                })
+            });
+        </script>
+    </body>
+</html>
